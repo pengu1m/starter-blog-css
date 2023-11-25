@@ -1,0 +1,38 @@
+@import "../var.scss";
+
+.header {
+    user-select: none;
+
+    margin-top: calc($size * 1.5);
+    margin-bottom: calc($size * 1.5);
+}
+
+.header__title {
+    $mag: 3;
+
+    font-weight: bold;
+    font-size: calc($size * $mag);
+    text-decoration: none;
+
+    color: $text;
+
+    &:visited {
+        color: $text;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.header__title--sub {
+    $mag: 1.2;
+    
+    font-weight: bold;
+    font-size: calc($size * $mag);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

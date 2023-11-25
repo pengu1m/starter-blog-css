@@ -1,0 +1,17 @@
+@import "../var.scss";
+
+.footer {
+    margin-top: $size;
+    margin-bottom: $size;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    font-weight: bold;
+}
+
+.footer__sns {
+    list-style: circle;
+}

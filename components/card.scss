@@ -1,0 +1,24 @@
+@import "../var.scss";
+
+.card {
+    margin-top: calc($size * 2.5);
+    margin-bottom: calc($size * 2.5);
+}
+
+.card__title {
+    display: block;
+
+    font-size: calc($size * 2.5);
+    font-weight: bold;
+    text-decoration: none;
+
+    color: $link;
+}
+
+.card__title:visited {
+    color: $visited;
+}
+
+.card__date {
+    color: $date;
+}

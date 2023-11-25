@@ -1,0 +1,32 @@
+@import "../var.scss";
+
+$icon_partion: 1fr;
+$descripton_partion: 4fr;
+
+$description_margin: 5px;
+
+.bio {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: $icon_partion $descripton_partion;
+    grid-template-rows: 1fr;
+}
+
+.bio_icon {
+    aspect-ratio: 1/1;
+    max-width: 80px;
+    
+    margin: auto;
+
+    user-select: none;
+
+    border-radius: 100%;
+    background-color: whitesmoke;
+}
+
+.bio_description {
+    text-align: center;
+    
+    margin-right: $description_margin;
+    margin-left: $description_margin;
+}

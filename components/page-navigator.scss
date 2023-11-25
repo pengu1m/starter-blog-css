@@ -1,0 +1,54 @@
+@import "../var.scss";
+
+@mixin btn-style {
+    padding-top: calc($size / 2);
+    padding-bottom: calc($size / 2);
+    padding-left: $size;
+    padding-right: $size;
+
+    background-color: $bg;
+    border: 2px $text solid;
+    border-radius: 7px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.page-navigator {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-navigator__next {
+    @include btn-style();
+
+    transition-duration: 100ms;
+
+    &:hover {
+        border: 2px $link solid;
+        color: $link;
+    }
+}
+
+.page-navigator__previous {
+    @include btn-style();
+
+    transition-duration: 100ms;
+
+    &:hover {
+        border: 2px $link solid;
+        color: $link;
+    }
+}
+
+.page-navigator__next--disabled {
+    @include btn-style();
+
+    opacity: 0.3;
+}
+
+.page-navigator__previous--disabled {
+    @include btn-style();
+
+    opacity: 0.3;
+}

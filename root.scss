@@ -1,0 +1,21 @@
+@import "var.scss";
+
+// Set global style
+body {
+    font-family: $font;
+}
+
+// Responsive screen
+body {
+    width: 50vw;
+    margin: auto;
+
+    font-family: $font;
+}
+
+@media screen and (max-width: $mobile) {
+    body {
+        width: calc(100vw - 40px);
+        margin: auto;
+    }
+}
